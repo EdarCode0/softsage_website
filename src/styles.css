@@ -1,21 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: "Almarai";
-    src: local("Almarai"), url('/assets/fonts/Almarai-Regular.ttf');
+    font-family: "Rajdhani";
+    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Regular.ttf');
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: local("Orbitron"), url('/assets/fonts/Orbitron-Regular.ttf');
+    font-family: "Rajdhani";
+    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Medium.ttf');
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: local("Orbitron"), url('/assets/fonts/Orbitron-Medium.ttf');
-}
-
-@font-face {
-    font-family: "Orbitron";
-    src: local("Orbitron"), url('/assets/fonts/Orbitron-Bold.ttf');
+    font-family: "Rajdhani";
+    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Bold.ttf');
 }

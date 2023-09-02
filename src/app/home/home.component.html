@@ -1,11 +1,17 @@
 <section class="section-header" id="home-page">
-  <nav class="navbar navbar-expand-lg fixed-top py-3 bg-light" id="header-section">
+  <nav class="navbar navbar-expand-lg fixed-top py-3 bg-light" id="header-section" [ngClass]="{
+    'transparent-navbar': isTransparent && !isMobileMenuOpen,
+    'scroll-navbar': !isTransparent && !isMobileMenuOpen,
+    'scroll-navbar-mobile': isMobileMenuOpen
+  }">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">VENUE</a>
+      <!-- <a class="navbar-brand logo" href="#">SOFTSAGE</a> -->
+      <img src="./../../assets/images/logo.png" alt="logo" width="200px" height="30px">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMobileMenu()">
+        <img src="./../../assets/images/toggler.png" alt="" width="30px" height="30px">
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav" (click)="toogle()" [ngClass]="show ? 'show' : 'hide'">
         <ul class="items navbar-nav ms-auto">
           <li class="nav-item">
@@ -39,22 +45,22 @@
     </div>
     <div class="carusel-outer">
       <div class="carousel-inner">
-        <div class="carousel-item carousel-image bg-img-1 active" data-bs-interval="10000">
-
-          <div class="carousel-caption text-center" data-aos="fade-up">
-            <h1>WELCOME TO VENUE CLUB</h1>
-            <p>THE BEST CLUB IN TOWN.</p>
+        <div class="carousel-item video-carousel carousel-image bg-img-1 active" data-bs-interval="10000">
+          <div class="video-container">
+            <video #videoElement id="video1" autoplay muted controls loop>
+              <source src="./../../assets/images/video1.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
         <div class="carousel-item carousel-image bg-img-2" data-bs-interval="2000">
-          
+
           <div class="carousel-caption d-md-block">
             <h1>WELCOME TO VENUE CLUB</h1>
             <p>THE BEST CLUB IN TOWN.</p>
           </div>
         </div>
         <div class="carousel-item carousel-image bg-img-1">
-  
+
           <div class="carousel-caption d-md-block">
             <h1>WELCOME TO VENUE CLUB</h1>
             <p>THE BEST CLUB IN TOWN.</p>

@@ -1,12 +1,11 @@
-@media (min-width: 576px)
-{
+@media (min-width: 576px) {
     .modal {
         --bs-modal-margin: 1.75rem;
         --bs-modal-box-shadow: tomato;
     }
 }
 
-.custom-image{
+.custom-image {
     object-fit: cover;
     height: 170px;
     width: 100%;
@@ -14,4 +13,17 @@
 
 .gallery-title {
     letter-spacing: 10px;
+}
+
+#galery {
+    background-color: #1A1A1E;
+    margin-top: -1px;
+}
+
+.gallery-title {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
 }
