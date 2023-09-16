@@ -1,6 +1,6 @@
 <section class="background-container" id="about-page" data-aos="fade-up">
-    <h1 class="about-title text-center py-5">ABOUT US</h1>
-    <!-- <div class="about-content relative container-fluid mb-5">
+  <h1 class="about-title text-center py-5">ABOUT US</h1>
+  <!-- <div class="about-content relative container-fluid mb-5">
       <div class="skewed absolute">
         <h1 class="h-s">Venue Balkan Club</h1>
         <p class="p-s">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
@@ -18,64 +18,74 @@
       <img class="image" src="assets/images/1.jpg" alt="">
     </div> -->
 
-    <div class="skewed">
-      <div class="text">
-        <h2 class="h-s">Venue Balkan Club</h2>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-              roots in a piece of classical Latin literature from 45 BC, making it over 2000
-              years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-              Virginia...</p>
-              <a class="btn a-s" type="button" (click)="open(demoModal)">Read More &rarr;</a>
-      </div>
-      <div class="image">
-          <div>
-              <img src="assets/images/italian-landscape-mountains-nature-900x500.jpg" alt="">
-          </div>
-      </div>
-  </div>
-
   <div class="skewed">
     <div class="text">
-      <h2 class="h-s">Venue Balkan Club</h2>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-            roots in a piece of classical Latin literature from 45 BC, making it over 2000
-            years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-            Virginia...</p>
-            <a class="btn a-s" type="button" (click)="open(demoModal)">Read More &rarr;</a>
+      <h2 class="h-s">SOFTSAGE.CO</h2>
+      <p>At SoftSage, we are more than just a software development and digital marketing company; we are your partners
+        in growth, innovation, and success. Our journey began with a passion for technology and a commitment to helping
+        businesses thrive in the digital age...</p>
+      <a class="btn a-s" type="button" (click)="open(demoModal)">Read More &rarr;</a>
     </div>
     <div class="image">
-        <div>
-            <img src="assets/images/9efaac_rio-de-janeiro.png" alt="">
-        </div>
+      <div>
+        <img src="assets/images/open-plan-office-900x500.jpg" alt="">
+      </div>
     </div>
-</div>
+  </div>
 
+  <!--Modal-->
+  <ng-template #demoModal let-modal>
+    <div class="modal-dialog-scrollable">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">More About Us</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="modal.dismiss('Cross click')"></button>
+      </div>
+      <div class="modal-body">
+        <i>
+          <h4 class="text-white">Our Mission</h4>
+          <p id="p-modal">At SoftSage, we are more than just a software development and digital marketing company; we
+            are your partners in growth, innovation, and success. Our journey began with a passion for technology and a
+            commitment to helping businesses thrive in the digital age Our mission is clear: to empower businesses with
+            cutting-edge technology solutions and digital marketing strategies that drive results. We believe in the
+            transformative power of technology and its ability to reshape industries, streamline operations, and engage
+            customers like never before. What Sets Us Apart
 
+            Expertise: Our team consists of highly skilled professionals with years of experience in software
+            development, digital marketing, and design. We stay ahead of the curve by continuously learning and adapting
+            to the latest industry trends.
 
-    <!--Modal-->
-    <ng-template #demoModal let-modal>
-        <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">More About Us</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-        </div>
-        <div class="modal-body">
-            <i>
-                <p id="p-modal">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                  roots in a piece of classical Latin literature from 45 BC, making it over 2000
-                  years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                  Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                  Lorem Ipsum passage, and going through the cites of the word in classical
-                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-                  1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
-                  and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
-                  of ethics, very popular during the Renaissance....
-                  The first line of Lorem Ipsum,
-                  "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The
-                  standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
-                  those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-                  Malorum" by Cicero are also reproduced in their exact original form,
-                  accompanied by English versions from the 1914 translation by H. Rackham.</p>
-              </i>
-        </div>
-      </ng-template>
-  </section>
+            Tailored Solutions: We understand that every business is unique. That's why we take the time to listen to
+            your specific needs and goals, crafting solutions that are tailor-made for your success.
+
+            Innovation: Innovation is at the heart of what we do. We love to tackle complex challenges and turn them
+            into opportunities for growth. Whether it's developing custom software or creating a digital marketing
+            strategy, we embrace innovation every step of the way.
+
+            Results-Driven: We are driven by results. Our success is measured by the success of our clients. We don't
+            just deliver projects; we deliver outcomes that make a real impact on your business.
+
+            Our Services
+
+            Software Development: From web and mobile apps to enterprise software, we create solutions that are
+            reliable, scalable, and user-friendly.
+
+            Digital Marketing: Our digital marketing experts help you reach and engage your target audience through SEO,
+            social media, content marketing, and more.
+
+            Design: We believe in the power of design to enhance user experiences. Our design team crafts visually
+            appealing and intuitive interfaces.
+
+            Let's Grow Together
+
+            Whether you're a startup looking to make your mark or an established enterprise seeking a digital
+            transformation, SoftSage is here to support your journey. We are passionate about what we do, and we can't
+            wait to partner with you to achieve your goals.
+
+            Join us on this exciting adventure, and together, we'll shape a brighter future for your business.</p>
+        </i>
+      </div>
+    </div>
+
+  </ng-template>
+</section>

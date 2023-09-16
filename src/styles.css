@@ -14,3 +14,7 @@
     font-family: "Rajdhani";
     src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Bold.ttf');
 }
+
+body {
+    background-color: #1A1A1E;
+}

@@ -114,15 +114,16 @@
 
 .bg-img-1 {
   background-size: cover;
+  background-image: url('/assets/images/desktop-wallpaper-software-engineer-software-development.jpg');
+  object-fit: cover;
 }
 
 .bg-img-2 {
-  background-image: url('/assets/images/2.jpg');
+  background-image: url('/assets/images/desktop-wallpaper-data-analytics-data-analysis.jpg');
+  background-size: cover;
+  object-fit: cover;
 }
 
-.bg-img-3 {
-  background-image: url('/assets/images/3.jpg');
-}
 
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #252525;
@@ -287,6 +288,10 @@
 
   }
 
+  #navbarNav {
+    margin-right: 100px  !important;
+  }
+
   .carousel-caption p {
     width: 60%;
     margin: auto;
@@ -296,6 +301,14 @@
 
   .carousel-item {
     height: 50% !important;
+  }
+
+  video {
+    height: 100vh !important;
+  }
+
+  .carousel-item  {
+    height: 100vh !important;
   }
   
 }
