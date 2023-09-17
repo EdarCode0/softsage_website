@@ -22,19 +22,10 @@
 }
 
 .navbar-toggler {
-  background-color: #f1f1f108;
+  background-color: transparent;
 }
 
-.logo {
-  z-index: 2;
-}
 
-.logo {
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Orbitron', sans-serif;
-}
 
 .icon {
   color: #fff !important;
@@ -51,11 +42,11 @@
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
-
+/* 
 .navbar-brand {
-  color: #629942 !important;
-  letter-spacing: 3px;
-}
+  width: 200px;
+  height: 30px;
+} */
 
 .header .nav-bar .menu {
   z-index: 2;
@@ -114,12 +105,12 @@
 
 .bg-img-1 {
   background-size: cover;
-  background-image: url('/assets/images/desktop-wallpaper-software-engineer-software-development.jpg');
+  background-image: url('/assets/images/abstract-blue-3d-shapes-background compressed.jpg');
   object-fit: cover;
 }
 
 .bg-img-2 {
-  background-image: url('/assets/images/desktop-wallpaper-data-analytics-data-analysis.jpg');
+  background-image: url('/assets/images/navy-blue-smoky-art-abstract-background compressed.jpg');
   background-size: cover;
   object-fit: cover;
 }
@@ -176,6 +167,17 @@
   background-color: #1A1A1E;
 }
 
+.logo {
+  width: 217px;
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.toggler {
+  width: 24px;
+  height: 24px;
+}
+
 @media(max-width: 668px) {
   .icon {
     text-align: center;
@@ -184,6 +186,7 @@
   .nav-item {
     text-align: center;
   }
+
 
 }
 
@@ -259,6 +262,12 @@
     line-height: 1.9;
 
   }
+
+  .logo {
+    width: 145px;
+    height: 16px;
+    margin-top: 5px;
+  }  
 }
 
 @media screen and (min-width: 428px) and (max-width: 430px) {
@@ -280,16 +289,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  .logo {
+    width: 145px;
+    height: 16px;
+    margin-top: 5px;
+  }  
+
   .carousel-caption h1 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
 
-  }
-
-  #navbarNav {
-    margin-right: 100px  !important;
   }
 
   .carousel-caption p {
@@ -367,6 +378,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
+  
 
   .carousel-caption h1 {
     font-size: 2rem;

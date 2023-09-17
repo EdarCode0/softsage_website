@@ -5,11 +5,11 @@
     'scroll-navbar-mobile': isMobileMenuOpen
   }">
     <div class="container-fluid">
-      <!-- <a class="navbar-brand logo" href="#">SOFTSAGE</a> -->
-      <img src="./../../assets/images/logo.png" alt="logo" width="200px" height="30px">
+      <a class="navbar-brand logo" href="#"><img src="./../../assets/images/logo.png" alt="logo" class="logo"></a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMobileMenu()">
-        <img src="./../../assets/images/toggler.png" alt="" width="30px" height="30px">
+        <img src="./../../assets/images/toggler.png" alt="" class="toggler">
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav" (click)="toogle()" [ngClass]="show ? 'show' : 'hide'">
@@ -34,7 +34,7 @@
         </ul>
       </div>
     </div>
-    
+
   </nav>
   <!--Hero-->
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -61,7 +61,7 @@
         </div>
         <div class="carousel-item carousel-image bg-img-1">
         </div>
-        
+
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

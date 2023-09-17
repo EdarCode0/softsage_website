@@ -171,8 +171,7 @@ body.modal-open .background-container {
     height: 40%;
     top: -5em;
     left: 50%;
-    transform: translateX(-50%) rotate(10deg);
-    ;
+    transform: translateY(-50%) rotate(20deg);
   }
 }
 
@@ -197,7 +196,7 @@ body.modal-open .background-container {
     height: 40%;
     top: -5em;
     left: 50%;
-    transform: translateX(-50%) rotate(10deg);
+    transform: translateY(-50%) rotate(20deg);
     ;
   }
 }
