@@ -2,9 +2,10 @@
   color: #000;
 }
 
-/* .navbar {
-  background-color: #1A1A1E !important;
-} */
+
+.items {
+  margin-right: 110px !important;
+}
 
 .transparent-navbar {
   background-color: transparent !important;
@@ -42,6 +43,7 @@
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
+
 /* 
 .navbar-brand {
   width: 200px;
@@ -146,21 +148,30 @@
 }
 
 .video-carousel {
-  position: relative; /* Ensure the parent is relatively positioned */
+  position: relative;
+  /* Ensure the parent is relatively positioned */
 }
 
 .video-container {
-  top: 0; /* Adjust the top position as needed */
-  left: 0; /* Adjust the left position as needed */
-  width: 100%; /* Make the video container cover the entire viewport width */
-  height: 100%; /* Make the video container cover the entire viewport height */
-  z-index: 1; /* Set a higher z-index to ensure it's above other content */
+  top: 0;
+  /* Adjust the top position as needed */
+  left: 0;
+  /* Adjust the left position as needed */
+  width: 100%;
+  /* Make the video container cover the entire viewport width */
+  height: 100%;
+  /* Make the video container cover the entire viewport height */
+  z-index: 1;
+  /* Set a higher z-index to ensure it's above other content */
 }
 
 .video-container video {
-  width: 100%; /* Make the video fill the video container's width */
-  height: 100%; /* Make the video fill the video container's height */
-  object-fit: cover; /* Maintain video aspect ratio and cover the container */
+  width: 100%;
+  /* Make the video fill the video container's width */
+  height: 100%;
+  /* Make the video fill the video container's height */
+  object-fit: cover;
+  /* Maintain video aspect ratio and cover the container */
 }
 
 .video-carousel {
@@ -255,6 +266,11 @@
 
   }
 
+  .items {
+    margin-right: auto !important;
+    /* Center the element horizontally */
+  }
+
   .carousel-caption p {
     width: 60%;
     margin: auto;
@@ -267,7 +283,7 @@
     width: 145px;
     height: 16px;
     margin-top: 5px;
-  }  
+  }
 }
 
 @media screen and (min-width: 428px) and (max-width: 430px) {
@@ -293,7 +309,11 @@
     width: 145px;
     height: 16px;
     margin-top: 5px;
-  }  
+  }
+
+  .items {
+    margin-right: auto !important; /* Center the element horizontally */
+  }
 
   .carousel-caption h1 {
     font-size: 2rem;
@@ -318,10 +338,10 @@
     height: 100vh !important;
   }
 
-  .carousel-item  {
+  .carousel-item {
     height: 100vh !important;
   }
-  
+
 }
 
 @media screen and (min-width: 360px) and (max-width: 360px) {
@@ -378,7 +398,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  
+
 
   .carousel-caption h1 {
     font-size: 2rem;
