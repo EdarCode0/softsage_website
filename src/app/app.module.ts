@@ -11,7 +11,6 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { LightboxModule } from 'ngx-lightbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -30,7 +29,6 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    LightboxModule,
     MatIconModule,
     MatButtonModule,
   ],
