@@ -2,8 +2,17 @@
   background-color: #1A1A1E;
 }
 
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #25a80d;
+  opacity: 1;
+}
+
 h1 {
   color: #fff;
+  margin-bottom: -50px;
 }
 
   .contact-title {
