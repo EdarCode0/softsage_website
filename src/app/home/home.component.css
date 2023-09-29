@@ -1,20 +1,26 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Use classes to target specific elements instead of tag selectors */
 .section-about p {
   color: #000;
 }
-
 
 .items {
   margin-right: 110px !important;
 }
 
-.transparent-navbar {
+/* Simplify and optimize the navbar styles */
+.navbar {
   background-color: transparent !important;
   transition: background-color 0.5s ease-in-out;
 }
 
 .scroll-navbar {
   background-color: #1A1A1E !important;
-  transition: background-color 0.5s ease-in-out;
 }
 
 .scroll-navbar-mobile {
@@ -26,107 +32,49 @@
   background-color: transparent;
 }
 
-
-
 .icon {
   color: #fff !important;
-
+  transition: opacity 0.5s ease-in-out;
 }
 
 .icon:hover {
   opacity: 0.8;
-  transition: all 0.5s ease-in-out;
 }
 
-#mainNav {
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
-  background-color: #fff;
-  transition: background-color 0.2s ease;
-}
-
-/* 
-.navbar-brand {
-  width: 200px;
-  height: 30px;
-} */
-
-.header .nav-bar .menu {
-  z-index: 2;
-}
-
-
-.items .linkItem {
+/* Simplify and optimize the navigation links */
+.items .nav-link {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 2px;
   padding: 10px;
   border-radius: 5px;
   text-transform: capitalize;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
   opacity: 0.8;
   color: #fff;
   font-family: 'Almarai', sans-serif;
 }
 
-/* .items .linkItem {
-  opacity: 0.8;
-  transition: background-color 0.2s ease;
-} */
-
-.items .linkItem:hover {
+.items .nav-link:hover {
   opacity: 0.3;
 }
 
+.logo {
+  width: 145px;
+  height: 16px;
+  margin-bottom: 16px;
+}
+
+.toggler {
+  width: 24px;
+  height: 24px;
+}
+
+/* Simplify and optimize the carousel styles */
 .carousel-item {
   height: 100vh;
   min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.carousel-caption h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-
-}
-
-.carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 1rem;
-  line-height: 1.9;
-
-}
-
-.navbar-toggler-icon {
-  color: #fff !important;
-}
-
-.bg-img-1 {
-  background-size: cover;
-  background-image: url('/assets/images/abstract-blue-3d-shapes-background compressed.jpg');
-  object-fit: cover;
-}
-
-.bg-img-2 {
-  background-image: url('/assets/images/navy-blue-smoky-art-abstract-background compressed.jpg');
-  background-size: cover;
-  object-fit: cover;
-}
-
-
-.carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: #252525;
-}
-
-.carousel-image {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: no-repeat center center / cover;
 }
 
 .carousel-caption {
@@ -137,354 +85,100 @@
   line-height: 95px;
   padding: 15px 25px;
   text-transform: uppercase;
-  border: 0px solid #fff;
+  border: 0;
   transition: all 0.3s;
-  background: rgb(255 255 255 / 58%);
+  background: rgba(255, 255, 255, 0.58);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.video-carousel {
-  position: relative;
-  /* Ensure the parent is relatively positioned */
+.carousel-caption h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
 }
 
-.video-container {
-  top: 0;
-  /* Adjust the top position as needed */
-  left: 0;
-  /* Adjust the left position as needed */
-  width: 100%;
-  /* Make the video container cover the entire viewport width */
-  height: 100%;
-  /* Make the video container cover the entire viewport height */
-  z-index: 1;
-  /* Set a higher z-index to ensure it's above other content */
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
-.video-container video {
-  width: 100%;
-  /* Make the video fill the video container's width */
-  height: 100%;
-  /* Make the video fill the video container's height */
-  object-fit: cover;
-  /* Maintain video aspect ratio and cover the container */
+/* Background images */
+.bg-img-1 {
+  background: url('/assets/images/abstract-blue-3d-shapes-background compressed.jpg') no-repeat center center / cover;
 }
 
-.video-carousel {
-  background-color: #1A1A1E;
+.bg-img-2 {
+  background: url('/assets/images/navy-blue-smoky-art-abstract-background compressed.jpg') no-repeat center center / cover;
 }
 
-.logo {
-  width: 217px;
-  height: 24px;
-  margin-bottom: 24px;
-}
-
-.toggler {
-  width: 24px;
-  height: 24px;
-}
-
-@media(max-width: 668px) {
-  .icon {
+/* Media Queries */
+@media (max-width: 668px) {
+  .icon, .nav-item {
     text-align: center;
   }
-
-  .nav-item {
-    text-align: center;
-  }
-
-
 }
 
-
-@media screen and (max-width: 1536px) and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
   .carousel-caption {
     bottom: 18rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
-  }
-
 }
 
 @media screen and (min-width: 390px) and (max-width: 391px) {
   .carousel-caption {
     bottom: 13rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
   .items {
     margin-right: auto !important;
-    /* Center the element horizontally */
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
-  }
-
-  .logo {
-    width: 145px;
-    height: 16px;
-    margin-top: 5px;
   }
 }
 
 @media screen and (min-width: 428px) and (max-width: 430px) {
   .carousel-caption {
     bottom: 17rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
-
   .logo {
     width: 145px;
     height: 16px;
     margin-top: 5px;
   }
-
   .items {
-    margin-right: auto !important; /* Center the element horizontally */
+    margin-right: auto !important;
   }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-  }
-
-  .carousel-item {
-    height: 50% !important;
-  }
-
-  video {
-    height: 100vh !important;
-  }
-
-  .carousel-item {
-    height: 100vh !important;
-  }
-
 }
 
 @media screen and (min-width: 360px) and (max-width: 360px) {
   .carousel-caption {
     bottom: 12rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
+  .items {
+    margin-right: auto !important;
   }
 }
 
 @media screen and (min-width: 414px) and (max-width: 414px) {
   .carousel-caption {
     bottom: 15rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .carousel-caption {
     bottom: 12rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
+  .items {
+    margin-right: auto !important;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 500px) {
   .carousel-caption {
     bottom: 15rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 95px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border: 0px solid #fff;
-    transition: all 0.3s;
-    background: rgb(255 255 255 / 58%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .carousel-caption h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-
-  }
-
-  .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.9;
-
   }
 }

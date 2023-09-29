@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css'],
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css'],
 })
-export class GalleryComponent {
+export class ProjectsComponent {
 
   public images: string[] = [
     'assets/images/portfolio/fullsize/1.jpg',
