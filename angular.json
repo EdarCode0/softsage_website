@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["aos"],
             "outputPath": "dist/softsage",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -29,7 +30,6 @@
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "node_modules/aos/dist/aos.css",
-              "node_modules/ngx-lightbox/lightbox.css",
               "src/styles.css"
             ],
             "scripts": [

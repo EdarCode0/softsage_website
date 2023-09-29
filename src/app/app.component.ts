@@ -8,8 +8,7 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    AOS.init({disable: 'mobile'});
+    AOS.init();
     AOS.refresh();
   }
-  title = 'Venue-Project';
 }
