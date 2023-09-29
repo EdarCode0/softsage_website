@@ -1,11 +1,4 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-interface AlbumItem {
-  src: string;
-  caption: string;
-  thumb: string;
-}
 
 @Component({
   selector: 'app-gallery',
@@ -13,7 +6,7 @@ interface AlbumItem {
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent {
-  faCoffee = faCoffee;
+
   public images: string[] = [
     'assets/images/portfolio/fullsize/1.jpg',
     'assets/images/portfolio/fullsize/2.jpg',

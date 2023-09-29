@@ -11,8 +11,6 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -29,8 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    MatIconModule,
-    MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
