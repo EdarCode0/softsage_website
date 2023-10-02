@@ -111,7 +111,7 @@ hr.divider {
   
   .slideshow-image {
     max-height: 80%;
-    max-width: 80%;
+    max-width: 100%;
   }
   
   .close-btn {
