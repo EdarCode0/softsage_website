@@ -80,6 +80,16 @@ hr.divider {
   opacity: 1;
 }
 
+.redirect {
+  text-decoration: none;
+  display: inline-block; /* Add this to prevent the link from moving */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.redirect:hover {
+  transform: scale(1.1); /* Increase the size by 10% */
+}
+
 /* Slideshow Modal Styles */
 .slideshow-modal {
     display: flex;

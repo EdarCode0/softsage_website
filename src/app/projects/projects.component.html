@@ -21,8 +21,9 @@
 <!-- Slideshow Modal -->
 <div *ngIf="isSlideshowOpen" class="slideshow-modal">
     <span class="close-btn" (click)="closeSlideshow()">&times;</span>
-    <a [href]="imageLinks[currentImageIndex]" target="_blank">
+    <a [href]="imageLinks[currentImageIndex]" class="redirect" target="_blank">
         <img id="slideshow-image" class="slideshow-image" [src]="images[currentImageIndex]" alt="Slideshow Image" />
+        <p class="text-center text-muted">Click to redirect</p>
     </a>
     <i class="bi bi-caret-left-fill prev-arrow" (click)="showPrevImage()"></i>
     <i class="bi bi-caret-right-fill next-arrow" (click)="showNextImage()"></i>

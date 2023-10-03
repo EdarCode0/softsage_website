@@ -10,6 +10,22 @@ h1 {
   margin-bottom: -50px;
 }
 
+P {
+  color: #fff;
+}
+
+li {
+  color: #fff;
+}
+
+strong {
+  color: #fff;
+}
+
+.mission {
+  color: #fff !important;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
