@@ -1,5 +1,6 @@
 .projects-title {
     letter-spacing: 10px;
+    font-size: xx-large;
 }
 
 hr.divider {
@@ -10,31 +11,31 @@ hr.divider {
   opacity: 1;
 }
 
-#gallery .container-fluid,
-#gallery .container-sm,
-#gallery .container-md,
-#gallery .container-lg,
-#gallery .container-xl,
-#gallery .container-xxl {
+#projects .container-fluid,
+#projects .container-sm,
+#projects .container-md,
+#projects .container-lg,
+#projects .container-xl,
+#projects .container-xxl {
   max-width: 1920px;
 }
 
-#gallery .container-fluid .gallery-box,
-#gallery .container-sm .gallery-box,
-#gallery .container-md .gallery-box,
-#gallery .container-lg .gallery-box,
-#gallery .container-xl .gallery-box,
-#gallery .container-xxl .gallery-box {
+#projects .container-fluid .gallery-box,
+#projects .container-sm .gallery-box,
+#projects .container-md .gallery-box,
+#projects .container-lg .gallery-box,
+#projects .container-xl .gallery-box,
+#projects .container-xxl .gallery-box {
   position: relative;
   display: block;
 }
 
-#gallery .container-fluid .gallery-box .gallery-box-caption,
-#gallery .container-sm .gallery-box .gallery-box-caption,
-#gallery .container-md .gallery-box .gallery-box-caption,
-#gallery .container-lg .gallery-box .gallery-box-caption,
-#gallery .container-xl .gallery-box .gallery-box-caption,
-#gallery .container-xxl .gallery-box .gallery-box-caption {
+#projects .container-fluid .gallery-box .gallery-box-caption,
+#projects .container-sm .gallery-box .gallery-box-caption,
+#projects .container-md .gallery-box .gallery-box-caption,
+#projects .container-lg .gallery-box .gallery-box-caption,
+#projects .container-xl .gallery-box .gallery-box-caption,
+#projects .container-xxl .gallery-box .gallery-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,32 +52,32 @@ hr.divider {
   text-align: center;
 }
 
-#gallery .container-fluid .gallery-box .gallery-box-caption .project-category,
-#gallery .container-sm .gallery-box .gallery-box-caption .project-category,
-#gallery .container-md .gallery-box .gallery-box-caption .project-category,
-#gallery .container-lg .gallery-box .gallery-box-caption .project-category,
-#gallery .container-xl .gallery-box .gallery-box-caption .project-category,
-#gallery .container-xxl .gallery-box .gallery-box-caption .project-category {
+#projects .container-fluid .gallery-box .gallery-box-caption .project-category,
+#projects .container-sm .gallery-box .gallery-box-caption .project-category,
+#projects .container-md .gallery-box .gallery-box-caption .project-category,
+#projects .container-lg .gallery-box .gallery-box-caption .project-category,
+#projects .container-xl .gallery-box .gallery-box-caption .project-category,
+#projects .container-xxl .gallery-box .gallery-box-caption .project-category {
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-#gallery .container-fluid .gallery-box .gallery-box-caption .project-name,
-#gallery .container-sm .gallery-box .gallery-box-caption .project-name,
-#gallery .container-md .gallery-box .gallery-box-caption .project-name,
-#gallery .container-lg .gallery-box .gallery-box-caption .project-name,
-#gallery .container-xl .gallery-box .gallery-box-caption .project-name,
-#gallery .container-xxl .gallery-box .gallery-box-caption .project-name {
+#projects .container-fluid .gallery-box .gallery-box-caption .project-name,
+#projects .container-sm .gallery-box .gallery-box-caption .project-name,
+#projects .container-md .gallery-box .gallery-box-caption .project-name,
+#projects .container-lg .gallery-box .gallery-box-caption .project-name,
+#projects .container-xl .gallery-box .gallery-box-caption .project-name,
+#projects .container-xxl .gallery-box .gallery-box-caption .project-name {
   font-size: 1.2rem;
 }
 
-#gallery .container-fluid .gallery-box:hover .gallery-box-caption,
-#gallery .container-sm .gallery-box:hover .gallery-box-caption,
-#gallery .container-md .gallery-box:hover .gallery-box-caption,
-#gallery .container-lg .gallery-box:hover .gallery-box-caption,
-#gallery .container-xl .gallery-box:hover .gallery-box-caption,
-#gallery .container-xxl .gallery-box:hover .gallery-box-caption {
+#projects .container-fluid .gallery-box:hover .gallery-box-caption,
+#projects .container-sm .gallery-box:hover .gallery-box-caption,
+#projects .container-md .gallery-box:hover .gallery-box-caption,
+#projects .container-lg .gallery-box:hover .gallery-box-caption,
+#projects .container-xl .gallery-box:hover .gallery-box-caption,
+#projects .container-xxl .gallery-box:hover .gallery-box-caption {
   opacity: 1;
 }
 
