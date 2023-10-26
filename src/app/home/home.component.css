@@ -45,6 +45,10 @@ p {
   opacity: 0.8;
 }
 
+.first {
+  opacity: 0.5;
+}
+
 /* Simplify and optimize the navigation links */
 .items .nav-link {
   font-size: 15px;
