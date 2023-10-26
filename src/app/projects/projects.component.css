@@ -28,6 +28,7 @@ hr.divider {
 #projects .container-xxl .gallery-box {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 #projects .container-fluid .gallery-box .gallery-box-caption,
