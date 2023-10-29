@@ -207,7 +207,7 @@ textarea.input1 + .shadow-input1 {
 	font-family: 'Rajdhani', sans-serif;;
   font-size: 15px;
   line-height: 1.5;
-  color: #666666;
+  color: #fff;
 }
 
 .shadow-input1 {
@@ -297,9 +297,6 @@ textarea.input1 + .shadow-input1 {
   -o-transform: translateX(10px);
   transform: translateX(10px);
 }
-
-
-
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
