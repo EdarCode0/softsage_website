@@ -4,6 +4,7 @@ section {
   align-items: center;
   flex-direction: column;
   background-color: #1A1A1E;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 h1 {
@@ -23,16 +24,20 @@ strong {
   color: #fff;
 }
 
+.modal-title {
+  font-family: 'Rajdhani', sans-serif;
+}
+
 .mission {
   color: #fff !important;
 }
-
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #25a80d;
-  opacity: 1;
+  background-color: #419547 !important; /* Ensure the color is not overridden */
+  border: none;
+  display: block;
 }
 
 .about-title {
@@ -65,7 +70,11 @@ p {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   align-items: center;
   margin: 0 auto;
+  font-family: 'Rajdhani', sans-serif;
+}
 
+h2 {
+  font-weight: 600;
 }
 
 .text {
@@ -75,7 +84,7 @@ p {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-
+  font-family: 'Rajdhani', sans-serif;
 }
 
 a {
@@ -88,7 +97,6 @@ a {
   height: 22em;
   position: relative;
   overflow: hidden;
-
 }
 
 .image::before {
@@ -104,6 +112,7 @@ a {
 
 .modal-body {
   background: #111;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 body.modal-open .background-container {
@@ -112,6 +121,7 @@ body.modal-open .background-container {
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
   filter: blur(4px);
+  font-family: 'Rajdhani', sans-serif;
 }
 
 #p-modal {

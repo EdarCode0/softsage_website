@@ -1,6 +1,6 @@
 <section class="section-header" id="home-page">
   <nav
-    class="navbar navbar-expand-lg fixed-top py-3 bg-light"
+    class="navbar navbar-expand-lg fixed-top py-3"
     id="header-section"
     [ngClass]="{
       'transparent-navbar': isTransparent && !isMobileMenuOpen,
@@ -23,7 +23,7 @@
         aria-label="Toggle navigation"
         (click)="toggleMobileMenu()"
       >
-        <img src="./../../assets/images/toggler.png" alt="" class="toggler" />
+        <img src="./../../assets/images/menu.png" alt="" class="toggler" />
       </button>
 
       <div
@@ -62,18 +62,24 @@
               >Contact</a
             >
           </li>
+          <li class="nav-item">
+            <a class="linkItem nav-link" href="#testimonials" (click)="toogle()"
+              >Testimonials</a
+            >
+          </li>
         </ul>
         <ul class="navbar-nav sm-icons ms-auto d-flex">
           <li class="nav-item">
-            <a class="nav-link icon" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="nav-link icon" href="https://www.facebook.com/profile.php?id=61551800643465" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon" href="#"
-              ><i class="bi bi-instagram"></i
-            ></a>
+            <a class="nav-link icon" href="https://www.instagram.com/softsage9/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon" href="#"><i class="bi bi-twitter"></i></a>
+            <a class="nav-link icon" href="https://twitter.com/Softsage9" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon" href="https://twitter.com/Softsage9" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -85,21 +91,21 @@
       <div class="carousel-item active">
         <img
         src="../../assets/images/scott-graham-5fNmWej4tAA-unsplash.jpg"
-        class="d-block w-100 h-100"
+        class="d-block w-100 h-100 test"
         alt="BG1"
       />
       </div>
       <div class="carousel-item">
         <img
         src="../../assets/images/gustas-brazaitis-xNKy-Cu20d4-unsplash.jpg"
-        class="d-block w-100 h-100"
+        class="d-block w-100 h-100 test"
         alt="BG2"
       />
       </div>
       <div class="carousel-item">
         <img
         src="../../assets/images/tim-van-der-kuip-HVp2MG15y3E-unsplash.jpg"
-        class="d-block w-100 h-100"
+        class="d-block w-100 h-100 test"
         alt="BG2"
       />
       </div>
