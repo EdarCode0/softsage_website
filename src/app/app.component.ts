@@ -14,6 +14,6 @@ export class AppComponent implements OnInit {
     AOS.refresh();
         setTimeout(() => {
       this.isLoading = false;
-    }, 2000); 
+    }, 1700); 
   }
 }
