@@ -109,13 +109,20 @@
 } */
 
 .form-inline {
-  position: fixed; /* Fixed positioning */
-  bottom: 150px;      /* Stick to the bottom */
-  left: 0;        /* Align to the left */
-  width: 100px;    /* Take full width */
-  background-color: transparent; /* Background color */
-  z-index: 1000;  /* Ensures it stays on top of other elements */
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
+  position: fixed;
+  /* Fixed positioning */
+  bottom: 150px;
+  /* Stick to the bottom */
+  left: 0;
+  /* Align to the left */
+  width: 100px;
+  /* Take full width */
+  background-color: transparent;
+  /* Background color */
+  z-index: 1000;
+  /* Ensures it stays on top of other elements */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds shadow for better visibility */
 }
 
 .dropdown-menu.show {
@@ -214,10 +221,11 @@
   .nav-item {
     text-align: center;
   }
+
   .form-inline {
     bottom: 10px;
     width: 100px;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,10 +247,12 @@
   .items {
     margin-right: auto !important;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,10 +278,12 @@
   .items {
     margin-right: auto !important;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,10 +303,12 @@
   .items {
     margin-right: auto !important;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,10 +328,12 @@
   .items {
     margin-right: auto !important;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,10 +352,12 @@
   .carousel-item {
     height: 50vh;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -351,10 +369,12 @@
   .carousel-item {
     height: 50vh;
   }
+
   .form-inline {
     bottom: 10px;
-    width: 100px; /* Adjust as needed for mobile */
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 100px;
+    /* Adjust as needed for mobile */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
