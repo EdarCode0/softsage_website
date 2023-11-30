@@ -6,14 +6,16 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
+
   isLoading = true;
 
   ngOnInit(): void {
     AOS.init();
     AOS.refresh();
-        setTimeout(() => {
+    setTimeout(() => {
       this.isLoading = false;
-    }, 1700); 
+    }, 1700);
   }
 }

@@ -1,4 +1,4 @@
-<section class="section-header" id="home-page" >
+<section class="section-header" id="home-page">
   <nav class="navbar navbar-expand-lg fixed-top py-3" id="header-section" [ngClass]="{
       'transparent-navbar': isTransparent && !isMobileMenuOpen,
       'scroll-navbar': !isTransparent && !isMobileMenuOpen,
@@ -15,22 +15,23 @@
       <div class="collapse navbar-collapse" id="navbarNav" (click)="toogle()" [ngClass]="show ? 'show' : 'hide'">
         <ul class="items navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="linkItem nav-link" aria-current="page" href="#home-page" (click)="toogle()">Home</a>
+            <a class="linkItem nav-link" aria-current="page" href="#home-page" (click)="toogle()">{{'Home' |
+              translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="linkItem nav-link" href="#about-page" (click)="toogle()">About</a>
+            <a class="linkItem nav-link" href="#about-page" (click)="toogle()">{{'About' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="linkItem nav-link" href="#services" (click)="toogle()">Services</a>
+            <a class="linkItem nav-link" href="#services" (click)="toogle()">{{'Services' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="linkItem nav-link" href="#projects" (click)="toogle()">Projects</a>
+            <a class="linkItem nav-link" href="#projects" (click)="toogle()">{{'Projects' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="linkItem nav-link" href="#contact" (click)="toogle()">Contact</a>
+            <a class="linkItem nav-link" href="#contact" (click)="toogle()">{{'Contact' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="linkItem nav-link" href="#testimonials" (click)="toogle()">Testimonials</a>
+            <a class="linkItem nav-link" href="#testimonials" (click)="toogle()">{{'Testimonials' | translate}}</a>
           </li>
         </ul>
         <ul class="navbar-nav sm-icons ms-auto d-flex">
@@ -54,20 +55,18 @@
       </div>
     </div>
   </nav>
+  
   <!--Hero-->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in-up">
+  <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in-up">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../../assets/images/BG1.png" class="d-block w-100 h-100 test"
-          alt="BG1" />
+        <img src="../../assets/images/BG1.png" class="d-block w-100 h-100 test" alt="BG1" />
       </div>
       <div class="carousel-item">
-        <img src="../../assets/images/BG2.png" class="d-block w-100 h-100 test"
-          alt="BG2" />
+        <img src="../../assets/images/BG2.png" class="d-block w-100 h-100 test" alt="BG2" />
       </div>
       <div class="carousel-item">
-        <img src="../../assets/images/BG3.png" class="d-block w-100 h-100 test"
-          alt="BG3" />
+        <img src="../../assets/images/BG3.png" class="d-block w-100 h-100 test" alt="BG3" />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -78,5 +77,25 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div> -->
+  <div class="hero">
+    <div class="background-image" style="background-image: url('../../assets/images/BG2.png');"></div>
+    <h1 data-aos="fade-up" data-aos-delay="500">{{'Welcome to Softsage' | translate}}</h1>
+    <p data-aos="fade-up" data-aos-delay="1000">{{'Learn about our products and services.' | translate}}</p>
+    <a href="#services" class="btn-explore btn btn-primary" data-aos="fade-up" data-aos-delay="1500">{{'EXPLORE' | translate}}</a>
   </div>
+
+  <div class="form-inline">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle>
+        <img [src]="getFlagImagePath()" [alt]="currentLang"> <!-- Flag of the current language -->
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem *ngFor="let language of translate.getLangs()" (click)="switchLanguage(language)">
+        {{ language }}
+        </button>
+      </div>
+    </div>
+  </div>
+
 </section>
