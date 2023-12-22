@@ -16,7 +16,7 @@
 }
 
 .logo {
-    height: 40px;
+    height: 400px;
 }
 
 @keyframes gradientBG {
@@ -59,6 +59,7 @@
 
 @media screen and (max-width: 600px) {
     .logo {
-        height: 20px;
+        width: 576px;
+        height: 324px;
     }
 }

@@ -1,6 +1,6 @@
 <section id="contact" class="mt-5">
   <h1 class="contact-title text-center" data-aos="fade-up">{{ 'CONTACT US' | translate }}</h1>
-  <hr class="divider" data-aos="fade-up"/>
+  <hr class="divider" data-aos="fade-up" />
 
   <div class="wrapper" data-aos="fade-up">
     <div class="contact1">
@@ -8,32 +8,27 @@
         <div class="contact1-pic js-tilt" data-tilt>
           <img src="../../assets/images/img-01.png" alt="{{ 'IMG' | translate }}">
         </div>
-  
-        <form class="contact1-form validate-form">
+
+        <form class="contact1-form validate-form" action="https://formspree.io/f/xdoqnppe" method="POST">
           <span class="contact1-form-title">
             {{ "We'd Love to Hear From You" | translate }}
           </span>
-  
+
           <div class="wrap-input1 validate-input">
             <input class="input1" type="text" name="name" placeholder="{{ 'Name' | translate }}">
             <span class="shadow-input1"></span>
           </div>
-  
+
           <div class="wrap-input1 validate-input">
-            <input class="input1" type="text" name="email" placeholder="{{ 'Email' | translate }}">
+            <input class="input1" type="email" name="email" placeholder="{{ 'Email' | translate }}">
             <span class="shadow-input1"></span>
           </div>
-  
-          <div class="wrap-input1 validate-input">
-            <input class="input1" type="text" name="subject" placeholder="{{ 'Subject' | translate }}">
-            <span class="shadow-input1"></span>
-          </div>
-  
+
           <div class="wrap-input1 validate-input">
             <textarea class="input1" name="message" placeholder="{{ 'Message' | translate }}"></textarea>
             <span class="shadow-input1"></span>
           </div>
-  
+
           <div class="container-contact1-form-btn">
             <button class="contact1-form-btn">
               <span>
