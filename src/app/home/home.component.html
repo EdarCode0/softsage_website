@@ -5,11 +5,11 @@
       'scroll-navbar-mobile': isMobileMenuOpen
     }">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#"><img src="./../../assets/images/logo.png" alt="logo" class="logo" /></a>
+      <a class="navbar-brand logo" href="#"><img src="/assets/images/Softsage.png" alt="logo" class="logo" /></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMobileMenu()">
-        <img src="./../../assets/images/menu.png" alt="" class="toggler" />
+        <img src="/assets/images/menu.png" alt="" class="toggler" />
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav" (click)="toogle()" [ngClass]="show ? 'show' : 'hide'">
@@ -34,24 +34,25 @@
             <a class="linkItem nav-link" href="#testimonials" (click)="toogle()">{{'Testimonials' | translate}}</a>
           </li>
         </ul>
-        <ul class="navbar-nav sm-icons ms-auto d-flex">
-          <li class="nav-item">
+        <ul class="navbar-nav sm-icons ms-auto">
+          <li class="links nav-item">
             <a class="nav-link icon" href="https://www.facebook.com/profile.php?id=61551800643465" target="_blank"
               rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="links nav-item">
             <a class="nav-link icon" href="https://www.instagram.com/softsage9/" target="_blank"
               rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="links nav-item">
             <a class="nav-link icon" href="https://twitter.com/Softsage9" target="_blank" rel="noopener noreferrer"><i
                 class="bi bi-twitter"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="links nav-item">
             <a class="nav-link icon" href="https://www.linkedin.com/in/softsage9" target="_blank"
               rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
           </li>
         </ul>
+        
       </div>
     </div>
   </nav>
@@ -79,7 +80,7 @@
     </button>
   </div> -->
   <div class="hero">
-    <div class="background-image" style="background-image: url('../../assets/images/BG2.png');"></div>
+    <img class="background-image" src="assets/images/BG2.png" alt="Background">
     <h1 data-aos="fade-up" data-aos-delay="500">{{'Welcome to Softsage' | translate}}</h1>
     <p data-aos="fade-up" data-aos-delay="1000">{{'Learn about our products and services.' | translate}}</p>
     <a href="#services" class="btn-explore btn btn-primary" data-aos="fade-up" data-aos-delay="1500">{{'EXPLORE' | translate}}</a>
