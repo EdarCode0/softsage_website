@@ -1,71 +1,43 @@
-/* .p-s {
-    font-size: 0.9em;
-    line-height: 23px;
-    color: #8f8f8f;
-  }
-  
-  .h-s {
-    margin: 0;
-  }
-
-  .modal-body {
-    background: #111;
-  }
-
-  #p-modal {
-    color: #8f8f8f;
-  }
-  
-  .skewed {
-    position: absolute;
-    z-index: 1;
-    clip-path: polygon(0 0, 100% 0, 89% 100%, 0 100%, 0% 38%);
-    width: 50%;
-    padding: 2.5em 5em 2.5em 2.5em;
-    color: #f1f1f1;
-    background: #111;
-    margin: 2em 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-  }
-  
-  .a-s {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .about-content {
-    display: flex;
-    position: relative;
-  }
-  
-  .image {
-    padding-top: 2em;
-    width: 100%;
-    height: 61.2vh;
-    position: relative;
-  }
-
-  @media screen and (max-width: 600px) {
-    .image {
-      display: none;
-    }
-  
-    .skewed {
-      position: relative;
-      width: 100%;
-      clip-path: none;
-      padding: 1.5em;
-    }
-  }
-
- */
 section {
-  display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #1A1A1E;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+  margin-bottom: -50px;
+  font-size: xx-large;
+}
+
+P {
+  color: #fff;
+}
+
+li {
+  color: #fff;
+}
+
+strong {
+  color: #fff;
+}
+
+.modal-title {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.mission {
+  color: #fff !important;
+}
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #419547 !important; /* Ensure the color is not overridden */
+  border: none;
+  display: block;
 }
 
 .about-title {
@@ -97,7 +69,12 @@ p {
   margin: 2em 0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   align-items: center;
+  margin: 0 auto;
+  font-family: 'Rajdhani', sans-serif;
+}
 
+h2 {
+  font-weight: 600;
 }
 
 .text {
@@ -107,7 +84,7 @@ p {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-
+  font-family: 'Rajdhani', sans-serif;
 }
 
 a {
@@ -120,7 +97,6 @@ a {
   height: 22em;
   position: relative;
   overflow: hidden;
-
 }
 
 .image::before {
@@ -136,6 +112,7 @@ a {
 
 .modal-body {
   background: #111;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 body.modal-open .background-container {
@@ -144,6 +121,7 @@ body.modal-open .background-container {
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
   filter: blur(4px);
+  font-family: 'Rajdhani', sans-serif;
 }
 
 #p-modal {

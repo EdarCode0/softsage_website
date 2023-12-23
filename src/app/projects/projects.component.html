@@ -1,0 +1,30 @@
+<div id="projects">
+    <div data-aos="fade-up">
+        <h1 class="text-center mt-0 text-white projects-title" >{{'PROJECTS' | translate}}</h1>
+        <hr class="divider" data-aos="fade-up"/>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-sm-6"*ngFor="let image of images; let i = index">
+                <a class="gallery-box" (click)="openSlideshow(i)" data-aos="fade-up" >
+                    <img class="img-fluid" [src]="image" alt="..." />
+                    <div class="gallery-box-caption">
+                        <div class="project-category text-white-50">{{ imageInfo[i]?.category }}</div>
+                        <div class="project-name">{{ imageInfo[i]?.name }}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slideshow Modal -->
+<div *ngIf="isSlideshowOpen" class="slideshow-modal">
+    <span class="close-btn" (click)="closeSlideshow()">&times;</span>
+    <a [href]="imageLinks[currentImageIndex]" class="redirect" target="_blank">
+        <img id="slideshow-image" class="slideshow-image" [src]="images[currentImageIndex]" alt="Slideshow Image" />
+        <p class="text-center text-muted">Click to redirect</p>
+    </a>
+    <i class="bi bi-caret-left-fill prev-arrow" (click)="showPrevImage()"></i>
+    <i class="bi bi-caret-right-fill next-arrow" (click)="showNextImage()"></i>
+</div>
