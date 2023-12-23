@@ -1,4 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-home',
@@ -6,13 +8,33 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  currentLang = 'EN';
   isMobileMenuOpen = false;
   show = false;
   isTransparent = true;
   @ViewChild('videoElement') videoElement!: ElementRef;
   @ViewChild('carouselElement') carouselElement!: ElementRef;
 
-  constructor() { }
+  constructor(
+
+    public translate: TranslateService
+
+  ) {
+
+    translate.addLangs(['EN', 'AL', 'FR']);
+
+    translate.setDefaultLang('EN');
+
+  }
+  switchLanguage(lang: string) {
+    this.currentLang = lang;
+    this.translate.use(lang);
+  }
+
+  getFlagImagePath(): string {
+    return `../../assets/images/${this.currentLang}.png`;
+  }
+
   smoothResetVideo() {
     const video = this.videoElement.nativeElement;
 
@@ -44,7 +66,7 @@ export class HomeComponent {
   }
 
   @HostListener('window:scroll', ['$event'])
-    onWindowScroll() {
+  onWindowScroll() {
     // Determine the scroll position
     const scrollY = window.scrollY || document.documentElement.scrollTop;
 
@@ -55,12 +77,12 @@ export class HomeComponent {
       this.isTransparent = false;
     }
   }
-  
+
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
-  
-  toogle(){
+
+  toogle() {
     this.show = !this.show;
   }
 }

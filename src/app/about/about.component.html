@@ -1,34 +1,17 @@
-<section class="background-container" id="about-page" data-aos="fade-up">
-  <h1 class="about-title text-center py-5">ABOUT US</h1>
-  <!-- <div class="about-content relative container-fluid mb-5">
-      <div class="skewed absolute">
-        <h1 class="h-s">Venue Balkan Club</h1>
-        <p class="p-s">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-          roots in a piece of classical Latin literature from 45 BC, making it over 2000
-          years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-          Virginia, looked up one of the more obscure Latin words, consectetur, from a
-          Lorem Ipsum passage, and going through the cites of the word in classical
-          literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-          1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
-          and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
-          of ethics, very popular during the Renaissance....
-        </p>
-        <a class="btn a-s" type="button" (click)="open(demoModal)">Read More &rarr;</a>
-      </div>
-      <img class="image" src="assets/images/1.jpg" alt="">
-    </div> -->
-
-  <div class="skewed">
+<section class="background-container" id="about-page">
+  <div data-aos="fade-up">
+    <h1 class="about-title text-center py-5">{{'ABOUT US' | translate}}</h1>
+    <hr class="divider" data-aos="fade-up"/>
+  </div>
+  <div class="skewed" data-aos="fade-up">
     <div class="text">
-      <h2 class="h-s">SOFTSAGE.CO</h2>
-      <p>At SoftSage, we are more than just a software development and digital marketing company; we are your partners
-        in growth, innovation, and success. Our journey began with a passion for technology and a commitment to helping
-        businesses thrive in the digital age...</p>
-      <a class="btn a-s" type="button" (click)="open(demoModal)">Read More &rarr;</a>
-    </div>
+      <h2 class="h-s py-2">SOFTSAGE</h2>
+      <p>{{'At SoftSage, we are more than just a software development and digital marketing company; we are your partners in growth, innovation, and success. Our journey began with a passion for technology and a commitment to helping businesses thrive in the digital age...' | translate}}</p>
+      <a class="btn a-s" type="button" (click)="open(demoModal)">{{ 'Read More →' | translate }}</a>
+    </div> 
     <div class="image">
       <div>
-        <img src="assets/images/open-plan-office-900x500.jpg" alt="">
+        <img height="400" src="assets/images/BG1.png" alt="image">
       </div>
     </div>
   </div>
@@ -37,55 +20,32 @@
   <ng-template #demoModal let-modal>
     <div class="modal-dialog-scrollable">
       <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">More About Us</h4>
+        <h4 class="modal-title" id="modal-basic-title">{{ 'More About Us' | translate }}</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
           (click)="modal.dismiss('Cross click')"></button>
       </div>
       <div class="modal-body">
         <i>
-          <h4 class="text-white">Our Mission</h4>
-          <p id="p-modal">At SoftSage, we are more than just a software development and digital marketing company; we
-            are your partners in growth, innovation, and success. Our journey began with a passion for technology and a
-            commitment to helping businesses thrive in the digital age Our mission is clear: to empower businesses with
-            cutting-edge technology solutions and digital marketing strategies that drive results. We believe in the
-            transformative power of technology and its ability to reshape industries, streamline operations, and engage
-            customers like never before. What Sets Us Apart
+          <p class="mission"><strong>{{ 'Our Mission' | translate }}</strong>: {{ 'Empowering businesses with cutting-edge technology solutions and digital marketing strategies that drive results. We believe in the transformative power of technology and its ability to reshape industries, streamline operations, and engage customers like never before.' | translate }}</p>
 
-            Expertise: Our team consists of highly skilled professionals with years of experience in software
-            development, digital marketing, and design. We stay ahead of the curve by continuously learning and adapting
-            to the latest industry trends.
+          <p><strong>{{ 'What Sets Us Apart' | translate }}</strong>:</p>
+          <ul>
+            <li><strong>{{ 'Expertise' | translate }}:</strong> {{ 'Our team consists of highly skilled professionals with years of experience in software development, digital marketing, and design. We stay ahead of the curve by continuously learning and adapting to the latest industry trends.' | translate }}</li>
+            <li><strong>{{ 'Tailored Solutions' | translate }}:</strong> {{ "We understand that every business is unique. That's why we take the time to listen to your specific needs and goals, crafting solutions that are tailor-made for your success." | translate }}</li>
+            <li><strong>{{ 'Innovation' | translate }}:</strong> {{ "Innovation is at the heart of what we do. We love to tackle complex challenges and turn them into opportunities for growth. Whether it's developing custom software or creating a digital marketing strategy, we embrace innovation every step of the way. "| translate }}</li>
+            <li><strong>{{ 'Results-Driven' | translate }}:</strong> {{ "We are driven by results. Our success is measured by the success of our clients. We don't just deliver projects; we deliver outcomes that make a real impact on your business." | translate }}</li>
+          </ul>
 
-            Tailored Solutions: We understand that every business is unique. That's why we take the time to listen to
-            your specific needs and goals, crafting solutions that are tailor-made for your success.
+          <p><strong>{{ 'Our Services' | translate }}</strong>:</p>
+          <ul>
+            <li><strong>{{ 'Software Development' | translate }}:</strong> {{ 'From web and mobile apps to enterprise software, we create solutions that are reliable, scalable, and user-friendly.' | translate }}</li>
+            <li><strong>{{ 'Digital Marketing' | translate }}:</strong> {{ 'Our digital marketing experts help you reach and engage your target audience through SEO, social media, content marketing, and more.' | translate }}</li>
+            <li><strong>{{ 'Design' | translate }}:</strong> {{ 'We believe in the power of design to enhance user experiences. Our design team crafts visually appealing and intuitive interfaces.' | translate }}</li>
+          </ul>
 
-            Innovation: Innovation is at the heart of what we do. We love to tackle complex challenges and turn them
-            into opportunities for growth. Whether it's developing custom software or creating a digital marketing
-            strategy, we embrace innovation every step of the way.
-
-            Results-Driven: We are driven by results. Our success is measured by the success of our clients. We don't
-            just deliver projects; we deliver outcomes that make a real impact on your business.
-
-            Our Services
-
-            Software Development: From web and mobile apps to enterprise software, we create solutions that are
-            reliable, scalable, and user-friendly.
-
-            Digital Marketing: Our digital marketing experts help you reach and engage your target audience through SEO,
-            social media, content marketing, and more.
-
-            Design: We believe in the power of design to enhance user experiences. Our design team crafts visually
-            appealing and intuitive interfaces.
-
-            Let's Grow Together
-
-            Whether you're a startup looking to make your mark or an established enterprise seeking a digital
-            transformation, SoftSage is here to support your journey. We are passionate about what we do, and we can't
-            wait to partner with you to achieve your goals.
-
-            Join us on this exciting adventure, and together, we'll shape a brighter future for your business.</p>
+          <p class="mission"><strong>{{ "Let's Grow Together" | translate }}</strong>: {{ "Whether you're a startup looking to make your mark or an established enterprise seeking a digital transformation, SoftSage is here to support your journey. We are passionate about what we do, and we can't wait to partner with you to achieve your goals. Join us on this exciting adventure, and together, we'll shape a brighter future for your business." | translate }}</p>
         </i>
       </div>
     </div>
-
   </ng-template>
 </section>

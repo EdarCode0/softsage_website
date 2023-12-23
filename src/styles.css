@@ -1,20 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: "Rajdhani";
-    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Regular.ttf');
+  font-family: "Rajdhani";
+  src: url('/assets/fonts/Rajdhani-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Rajdhani";
-    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Medium.ttf');
+  font-family: "Rajdhani";
+  src: url('/assets/fonts/Rajdhani-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Rajdhani";
-    src: local("Rajdhani"), url('/assets/fonts/Rajdhani-Bold.ttf');
+  font-family: "Rajdhani";
+  src: url('/assets/fonts/Rajdhani-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+  height: 10px; /* height of the entire scrollbar for horizontal scroll */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scrollbar itself */
+  border-radius: 5px; /* roundness of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color when hovering over the scrollbar */
+}
+
+* {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #e0e0e0; /* thumb and track color */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1A1A1E;
+  background-color: #1A1A1E;
+  overflow: auto;
 }
